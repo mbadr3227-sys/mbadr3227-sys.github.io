@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Abdelrahman — HR into people analytics</title>
+<meta name="description" content="HR professional moving into people analytics. CIPD Level 3, SQL, Python, Power BI. Based in County Durham.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="topbar">
+  <a class="mark" href="index.html">MB<span>—</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#toolkit">Toolkit</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<aside class="rail" aria-hidden="true">
+  <span class="rail-item" data-rail="intro">Intro</span>
+  <span class="rail-item" data-rail="work">Work</span>
+  <span class="rail-item" data-rail="toolkit">Toolkit</span>
+</aside>
+
+<main id="main">
+
+  <section class="intro" id="intro">
+        <p class="eyebrow">County Durham, England</p>
+    <h1>
+      I've sat in the <em>exit interviews</em>.
+      Now I can read what the data was saying all along.
+    </h1>
+    <p class="lede">
+      I'm Mohamed Abdelrahman. Years in HR taught me what turnover actually costs a team,
+      and why the person leaving rarely says the real reason on their last day. I'm CIPD
+      Level 3 qualified, and I've spent the past year learning SQL, Python, and Power BI
+      so I can answer those questions with evidence instead of instinct.
+    </p>
+    <div class="intro-actions">
+      <a class="btn" href="#work">See the work</a>
+      <a class="btn btn-quiet" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <header class="sec-head">
+      <h2>Work</h2>
+      <p class="sec-note">Things I've built end to end. Filter by what they are.</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filter projects by type">
+      <button class="chip is-on" data-filter="all">All</button>
+      <button class="chip" data-filter="data">Data</button>
+      <button class="chip" data-filter="mobile">Mobile</button>
+      <button class="chip" data-filter="web">Web</button>
+      <p class="count" id="count"></p>
+    </div>
+
+        <ol class="table" id="projects">
+
+      <li class="row" data-type="web">
+        <div class="row-name">
+          <h3>AI Fleet Management</h3>
+          <p>A Flask app for tracking drivers and vehicles, with an assistant that answers
+             questions about the fleet in plain English instead of making the user write a
+             query. SQLite behind it, an LLM API on top.</p>
+        </div>
+        <p class="row-stack">Python · Flask · SQLite · LLM API</p>
+        <p class="row-tag">Web</p>
+      </li>
+
+      <li class="row" data-type="data">
+        <div class="row-name">
+          <h3>DataPeek</h3>
+          <p>A command line tool I built for the first five minutes with any new dataset:
+             shape, nulls, types, and outliers. Written because I kept running the same
+             checks by hand on every extract.</p>
+        </div>
+        <p class="row-stack">Python · pandas · CLI</p>
+        <p class="row-tag">Data</p>
+      </li>
+
+      <li class="row" data-type="data">
+        <div class="row-name">
+          <h3>Chi-square testing on categorical data</h3>
+          <p>Testing whether conservation status differs by species category across a
+             national parks dataset — the same test that answers whether attrition differs
+             by department, grade, or manager.</p>
+        </div>
+        <p class="row-stack">Python · pandas · matplotlib</p>
+        <p class="row-tag">Data</p>
+      </li>
+
+      <li class="row" data-type="data">
+        <div class="row-name">
+          <h3>Correlation, trends, and the outlier that matters</h3>
+          <p>Sixteen years of GDP against life expectancy across six countries, and the one
+             case that breaks the pattern. Practice at spotting when an average hides the
+             story rather than telling it.</p>
+        </div>
+        <p class="row-stack">Python · pandas · seaborn</p>
+        <p class="row-tag">Data</p>
+      </li>
+
+      <li class="row" data-type="data">
+        <div class="row-name">
+          <h3>CreatorRoute</h3>
+          <p>A recommender that models topics as a graph and finds the shortest path between
+             where someone is and where they want to be. Built with Dijkstra and A* — the
+             same shape as mapping a career path through internal roles.</p>
+        </div>
+        <p class="row-stack">Python · Graphs · CLI</p>
+        <p class="row-tag">Data</p>
+      </li>
+
+      <li class="row" data-type="mobile">
+        <div class="row-name">
+          <h3>SplitUp</h3>
+          <p>Bill splitting that actually chases people. Voice reminders generated per
+             person, a 3D character that gets progressively less patient, and a local SQLite
+             schema built for offline first.</p>
+        </div>
+        <p class="row-stack">React Native · Expo · SQLite · TTS</p>
+        <p class="row-tag">Mobile</p>
+      </li>
+
+      <li class="row" data-type="web">
+        <div class="row-name">
+          <h3>This site</h3>
+          <p>Hand written, no framework. The filter above is plain JavaScript over the DOM —
+             no library needed for six rows.</p>
+        </div>
+        <p class="row-stack">HTML · CSS · JavaScript</p>
+        <p class="row-tag">Web</p>
+      </li>
+
+    </ol>
+    <p class="empty" id="empty" hidden>Nothing in that category yet. Try another.</p>
+  </section>
+
+  <section class="toolkit" id="toolkit">
+    <header class="sec-head">
+      <h2>Toolkit</h2>
+      <p class="sec-note">What I reach for, and what I reach for it to do.</p>
+    </header>
+
+    <dl class="kit">
+      <div class="kit-item">
+        <dt>Python</dt>
+        <dd>pandas, NumPy, matplotlib, seaborn. Cleaning, exploring, and explaining data.</dd>
+      </div>
+      <div class="kit-item">
+        <dt>SQL</dt>
+        <dd>PostgreSQL and SQLite. Schema design, normalisation, window functions, indexing.</dd>
+      </div>
+      <div class="kit-item">
+        <dt>JavaScript</dt>
+        <dd>ES6, the DOM, React, and React Native with Expo for mobile.</dd>
+      </div>
+      <div class="kit-item">
+        <dt>HTML &amp; CSS</dt>
+        <dd>Semantic markup, Flexbox, Grid, and layouts that hold up on a phone.</dd>
+      </div>
+             <div class="kit-item">
+        <dt>Power BI</dt>
+        <dd>Dashboards and DAX measures. Turning HR data into something a manager will
+            actually open.</dd>
+      </div>
+      <div class="kit-item">
+        <dt>Git</dt>
+        <dd>Branching, meaningful commits, and GitHub for everything above.</dd>
+      </div>
+      <div class="kit-item">
+        <dt>HR</dt>
+        <dd>CIPD Level 3. Recruitment, employee relations, and the operational reality
+            behind every people metric. The context most analysts don't have.</dd>
+      </div>
+      <div class="kit-item">
+        <dt>Tools</dt>
+        <dd>VS Code, the command line, Expo, and Jupyter. Comfortable on Windows and Linux.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="closer">
+        <h2>Looking for a first people analytics role</h2>
+    <p>Open to people analytics, HR data, and analyst roles in the North East, hybrid or remote.</p>
+    <a class="btn" href="contact.html">Get in touch</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Built by hand in County Durham, 2026.</p>
+  <p><a href="https://github.com/mbadr3227-sys">GitHub</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

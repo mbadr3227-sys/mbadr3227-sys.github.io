@@ -387,7 +387,12 @@ a { color: inherit; }
 .closer p { margin: 0 0 2rem; max-width: 58ch; }
 
 /* ---------- contact page ---------- */
-.contact a { color: var(--burgundy); }
+.kit-item a {
+  color: var(--paper);
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-underline-offset: 0.25em;
+}
+.kit-item a:hover { text-decoration-color: var(--paper); }
 
 /* ---------- footer ---------- */
 .foot {

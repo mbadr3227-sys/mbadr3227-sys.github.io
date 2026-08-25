@@ -82,15 +82,29 @@
       <li class="row" data-type="web">
         <div class="row-name">
           <h3>E-Commerce REST API</h3>
-          <p class="row-desc"><a href="https://github.com/mbadr3227-sys/e-commerce-api" target="_blank" rel="noopener">mbadr3227-sys/e-commerce-api</a><br>
-            A full e-commerce back end: registration and login, product catalogue,
-            carts, checkout and orders. Checkout runs in a single transaction, so stock
-            and prices stay honest even when something fails halfway. Documented
-            with Swagger and shipped with a small demo client.</p>
+          <p class="row-repo"><a href="https://github.com/mbadr3227-sys/e-commerce-api" target="_blank" rel="noopener">mbadr3227-sys/e-commerce-api</a></p>
+          <p>A full e-commerce back end: registration and login, product catalogue,
+             carts, checkout and orders. Checkout runs in a single transaction, so stock
+             and prices stay honest even when something fails halfway. Every endpoint
+             documented in Swagger.</p>
         </div>
-        <p class="row-stack">Express - PostgreSQL - Passport - Swagger</p>
+        <p class="row-stack">Express · PostgreSQL · Passport · Swagger</p>
         <p class="row-tag">Web</p>
-        <p class="row-links"><a href="https://e-commerce-api-28k6.onrender.com" target="_blank" rel="noopener">Live demo</a></p>
+        <p class="row-links"><a href="https://e-commerce-api-28k6.onrender.com/docs" target="_blank" rel="noopener">API docs</a></p>
+      </li>
+
+      <li class="row" data-type="web">
+        <div class="row-name">
+          <h3>E-Commerce Client</h3>
+          <p class="row-repo"><a href="https://github.com/mbadr3227-sys/e-commerce-client" target="_blank" rel="noopener">mbadr3227-sys/e-commerce-client</a></p>
+          <p>The front end for the API above — browsing, cart, checkout, and order history
+             in React. Session-based auth means the client holds no tokens, and the cart
+             lives on the server, so it survives a refresh or a different device. Built
+             second, on purpose: the API had to be honest before anything could sit on it.</p>
+        </div>
+        <p class="row-stack">React · Vite · React Router · Render</p>
+        <p class="row-tag">Web</p>
+        <p class="row-links"><a href="https://e-commerce-client-sitc.onrender.com" target="_blank" rel="noopener">Live demo</a></p>
       </li>
       <li class="row" data-type="web">
         <div class="row-name">
